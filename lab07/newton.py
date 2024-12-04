@@ -33,7 +33,7 @@ def newtonsMethod(f, start, tolerance, maxIteration):
         fDx = fDerivative.subs(x, xn)
         if abs(fx) < tolerance: 
             return float(xn)
-            #return xn
+            
         if fDx == 0: 
             raise ValueError('fDx == 0')
         xn = xn - fx / fDx
