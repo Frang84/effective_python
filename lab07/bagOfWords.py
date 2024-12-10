@@ -21,6 +21,7 @@ class BagOfWords:
                 self._bag[tmpW.lower()] += 1
 
     def saveToJson(self,*, path,fileName): 
+        #sys path join do poprawy albo os 
         fullPath = path + '\\' + fileName + ".json"  
         with open(fullPath, 'w') as file: 
             json.dump(self._bag, file)
